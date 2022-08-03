@@ -3,8 +3,12 @@ package hello.proxy.cglib;
 import hello.proxy.cglib.code.TimeMethodInterceptor;
 import hello.proxy.common.service.ConcreteService;
 import lombok.extern.slf4j.Slf4j;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.springframework.aop.support.AopUtils;
 import org.springframework.cglib.proxy.Enhancer;
+
+import static org.assertj.core.api.Assertions.assertThat;
 
 @Slf4j
 public class CglibTest {
